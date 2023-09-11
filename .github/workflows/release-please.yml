@@ -13,11 +13,11 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Update Tags
+      - name: Update tags
         uses: ./.github/actions/add_tags
-      - name: Update Release
+      - name: Update release
         uses: google-github-actions/release-please-action@v3
         with:
           command: manifest
