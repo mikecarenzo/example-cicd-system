@@ -13,6 +13,9 @@ class PackageParser {
         let configuredPackages = this._config.packages ?? [];
         for (let loc in configuredPackages) {
             let version = this._manifest[loc];
+            if(!version) {
+                continue;
+            }
             let component = configuredPackages[loc].component ?? "";
             let tagIncludesName =
                 configuredPackages[loc]["include-component-in-tag"] ??

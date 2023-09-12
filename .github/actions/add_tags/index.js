@@ -25,7 +25,8 @@ const { GitHubRepository } = require("./src/GitHubRepository");
         // 3. Compile package list
         let packages = parser.packages;
         if (packages.size === 0) {
-            throw new Error("No packages configured.")
+            logger.info("No packages configured.");
+            return;
         }
         logger.info(`Found ${packages.size} packages:`);
         for (let package of packages.values()) {
