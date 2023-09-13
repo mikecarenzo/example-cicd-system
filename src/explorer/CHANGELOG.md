@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/mikecarenzo/example-cicd-system/compare/czo-schemaexplorer-v0.1.0...czo-schemaexplorer-v0.1.1) (2023-09-13)
+
+
+### Features
+
+* improve text readability ([1c9d42f](https://github.com/mikecarenzo/example-cicd-system/commit/1c9d42fbef96ba5024b5e493785be3622abcceec))
+
 ## 0.1.0 (2023-09-12)
 
 
