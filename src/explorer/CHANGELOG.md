@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/mikecarenzo/example-cicd-system/compare/czo-schemaexplorer-v0.1.1...czo-schemaexplorer-v0.1.2) (2023-09-13)
+
+
+### Features
+
+* improve page contrast ([6f75d55](https://github.com/mikecarenzo/example-cicd-system/commit/6f75d556653dbf3a78fa728422938c7ef6b4ac2c))
+
 ## [0.1.1](https://github.com/mikecarenzo/example-cicd-system/compare/czo-schemaexplorer-v0.1.0...czo-schemaexplorer-v0.1.1) (2023-09-13)
 
 
