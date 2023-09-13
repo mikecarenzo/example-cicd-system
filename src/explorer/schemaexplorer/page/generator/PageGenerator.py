@@ -26,9 +26,9 @@ class PageGenerator:
                     <title>Generated Page</title>
                 </head>
                 <body>
-                    <h1>Generated Page</h1>
-                    <p>Generated Page Text:</p>
-                    <p>""" + self.__text + """</p>
+                    <h1 style="font-family: sans-serif;">Generated Page</h1>
+                    <p style="font-family: sans-serif;">Generated Page Text:</p>
+                    <p style="font-family: sans-serif;">""" + self.__text + """</p>
                 </body>
             </html>
         """
