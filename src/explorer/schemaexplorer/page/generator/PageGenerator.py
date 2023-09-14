@@ -1,5 +1,4 @@
 class PageGenerator:
-
     def __init__(self, text):
         """
         Creates a PageGenerator.
@@ -19,7 +18,8 @@ class PageGenerator:
         Returns:
             str: The generated page.
         """
-        return """
+        return (
+            """
             <!DOCTYPE html>
             <html>
                 <head>
@@ -28,7 +28,10 @@ class PageGenerator:
                 <body style="background: #434343; color: #ffffff;">
                     <h1 style="font-family: sans-serif;">Generated Page</h1>
                     <p style="font-family: sans-serif;">Generated Page Text:</p>
-                    <p style="font-family: sans-serif;">""" + self.__text + """</p>
+                    <p style="font-family: sans-serif;">"""
+            + self.__text
+            + """</p>
                 </body>
             </html>
         """
+        )

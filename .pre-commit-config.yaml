@@ -1,16 +1,20 @@
 repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.3.0
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
     hooks:
-    -   id: check-toml
-    -   id: check-yaml
-- repo: https://github.com/astral-sh/ruff-pre-commit
-  # Ruff version.
-  rev: v0.0.287
-  hooks:
-    - id: ruff
-      name: "ruff (cli)"
-      files: '^src/cli/.*\.py'
-    - id: ruff
-      name: "ruff (explorer)"
-      files: '^src/explorer/.*\.py'
+      - id: check-toml
+      - id: check-yaml
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.0.287
+    hooks:
+      - id: ruff
+        name: ruff (cli)
+        files: ^src/cli/.*\.py
+      - id: ruff
+        name: ruff (explorer)
+        files: ^src/explorer/.*\.py
+  - repo: https://github.com/ambv/black
+    rev: 23.9.1
+    hooks:
+    - id: black
+      language_version: python3
