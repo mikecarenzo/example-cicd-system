@@ -16,7 +16,7 @@ def generate_cli():
     if not os.path.exists(args.path):
         os.makedirs(args.path)
     # Generate html
-    with open(os.path.join(args.path, "index.html"), 'w') as file:
+    with open(os.path.join(args.path, "index.html"), "w") as file:
         file.write(generator.generate().strip())
 
 
