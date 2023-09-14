@@ -7,7 +7,7 @@ class PageGenerator:
             text (str): The page's text.
         """
         if isinstance(text, str):
-            self.__text = text
+            self.__text = text #Random comment
         else:
             raise TypeError("String expected.")
 
