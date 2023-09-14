@@ -1,5 +1,5 @@
-import os
 import argparse
+import os
 
 from ..page.generator import PageGenerator
 
