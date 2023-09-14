@@ -1,6 +1,9 @@
 name: Lint (Python)
 
-on: [ push, pull_request ]
+on:
+  push:
+    branches: [main]
+  pull_request:
 
 jobs:
   ruff:
@@ -8,11 +11,5 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: "Lint CLI"
+      - name: "Run Ruff"
         uses: chartboost/ruff-action@v1
-        with:
-          src: "./src/cli"
-      - name: "Lint Explorer"
-        uses: chartboost/ruff-action@v1
-        with:
-          src: "./src/explorer"
